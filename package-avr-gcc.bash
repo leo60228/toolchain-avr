@@ -95,13 +95,13 @@ rm -rf toolsdir objdir *-build
 ./binutils.build.bash
 ./gcc.build.bash
 ./avr-libc.build.bash
-./gdb.build.bash
 
 rm -rf objdir/{info,man,share}
 
 ${BASH} ./atpack.build.bash
 ${BASH} ./atpack.tiny.build.bash
 ${BASH} ./atpack.Dx.build.bash
+${BASH} ./atpack.Ex.build.bash
 
 
 # if producing a windows build, compress as zip and
@@ -118,8 +118,14 @@ if [[ ${OUTPUT_TAG} == *"mingw"* ]] ; then
 else
 
   rm -f avr-gcc-${OUTPUT_VERSION}-${OUTPUT_TAG}.tar.bz2
+  rm -f objdir/package.json
   mv objdir avr
   tar -cjvf avr-gcc-${OUTPUT_VERSION}-${OUTPUT_TAG}.tar.bz2 avr
   mv avr objdir
+
+  cp -v package.json objdir/
+  pushd objdir
+  tar -czvf ../platformio.tar.gz *
+  popd
 
 fi

@@ -6,6 +6,10 @@ autoconf-2.64.tar.bz2
 autoconf-2.64/
 automake-1.11.1.tar.bz2
 automake-1.11.1/
+autoconf-2.69.tar.xz
+autoconf-2.69/
+automake-1.15.1.tar.xz
+automake-1.15.1/
 avr-binutils.tar.bz2
 binutils
 avr-gcc.tar.bz2
@@ -16,9 +20,11 @@ avr-libc.tar.bz2
 avr-libc/
 avr8-headers.zip
 avr8-headers/
-gmp-5.0.2.tar.bz2
-mpc-0.9.tar.gz
-mpfr-3.1.0.tar.bz2
 avr
 atpack
-gcc-7.3.0.tar.xz
+gcc-13.2.0.tar.xz
+gmp-6.3.0.tar.bz2
+mpc-1.3.1.tar.gz
+mpfr-4.2.1.tar.bz2
+platformio.tar.gz
+avr-gcc-*.tar.bz2

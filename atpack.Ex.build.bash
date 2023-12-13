@@ -17,15 +17,15 @@
 
 source build.conf
 
-wget ${ATMEL_DX_PACK_URL}
+wget ${ATMEL_EX_PACK_URL}
 
 mkdir -p atpack
 cd atpack
 rm -rf *
-mv ../${ATMEL_DX_PACK_FILENAME}.atpack .
+mv ../${ATMEL_EX_PACK_FILENAME}.atpack .
 
-mv ${ATMEL_DX_PACK_FILENAME}.atpack ${ATMEL_DX_PACK_FILENAME}.zip
-unzip ${ATMEL_DX_PACK_FILENAME}.zip
+mv ${ATMEL_EX_PACK_FILENAME}.atpack ${ATMEL_EX_PACK_FILENAME}.zip
+unzip ${ATMEL_EX_PACK_FILENAME}.zip
 
 ALL_FILES=`find ../objdir`
 
