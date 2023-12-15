@@ -1,6 +1,6 @@
 {
   "name": "toolchain-atmelavr",
-  "version": "3.13200.0",
+  "version": "3.13200.1",
   "description": "GCC Toolchain for Microchip AVR microcontrollers",
   "keywords": [
     "toolchain",

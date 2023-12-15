@@ -33,17 +33,12 @@ cd -
 
 export PATH="$TOOLS_BIN_PATH:$PATH"
 
-if [[ ! -f avr-binutils.tar.bz2  ]] ;
+if [[ ! -f binutils-${BINUTILS_VERSION}.tar.xz  ]] ;
 then
-	wget $AVR_SOURCES/avr-binutils.tar.bz2
+	wget https://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VERSION}.tar.xz
 fi
-tar xf avr-binutils.tar.bz2
-
-cd binutils
-autoconf
-cd ld
-autoreconf
-cd ../../
+tar xf binutils-${BINUTILS_VERSION}.tar.xz
+mv binutils-${BINUTILS_VERSION} binutils
 
 mkdir -p objdir
 cd objdir

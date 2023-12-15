@@ -10,7 +10,7 @@ autoconf-2.69.tar.xz
 autoconf-2.69/
 automake-1.15.1.tar.xz
 automake-1.15.1/
-avr-binutils.tar.bz2
+binutils-2.41.tar.xz
 binutils
 avr-gcc.tar.bz2
 gcc

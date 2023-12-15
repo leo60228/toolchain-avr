@@ -136,7 +136,7 @@ rm -f "${TOOLS_BIN_PATH}/automake"
 wget -O "${TOOLS_BIN_PATH}/automake" https://raw.githubusercontent.com/gentoo/autotools-wrappers/main/am-wrapper.sh
 chmod a+x "${TOOLS_BIN_PATH}/automake"
 
-for x in auto{conf,header,m4te,reconf,scan,update} ifnames; do
+for x in auto{header,m4te,reconf,scan,update} ifnames; do
 	ln -sfv "${TOOLS_BIN_PATH}/autoconf" "${TOOLS_BIN_PATH}/$x"
 done
 

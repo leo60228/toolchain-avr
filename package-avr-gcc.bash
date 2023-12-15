@@ -88,6 +88,7 @@ else
 fi
 
 rm -rf autoconf-${AUTOCONF_VERSION} automake-${AUTOMAKE_VERSION}
+rm -rf autoconf-${GCC_AUTOCONF_VERSION} automake-${GCC_AUTOMAKE_VERSION}
 rm -rf gcc gmp-${GMP_VERSION} mpc-${MPC_VERSION} mpfr-${MPFR_VERSION} binutils avr-libc libc avr8-headers gdb
 rm -rf toolsdir objdir *-build
 
